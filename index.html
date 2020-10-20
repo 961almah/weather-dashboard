@@ -10,21 +10,21 @@
 <body>
     <div class="container">
         <!-- create searchbar -->
-        <nav class="navbar navbar-custom bg-light">
+        <nav class="navbar navbar-custom bg-custom">
             <a class="navbar-brand" href="#">
                 <img src="weatherimage.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                     Welcome to the World Weather on the Web
             </a>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input id="search-city" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="searched-city" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </nav>
         <!-- add jumbotron or equivalent -->
         <main class="jumbotron jumbo-top">
             <!-- center h1 -->
             <!-- have h1 value be returned from search button -->
-            <h1 class="display-4">Chosen location</h1>
+            <h1 class="display-4" id="chosen-location"></h1>
             <!-- display relevant info underneath -->
             <p class="lead">The following are the current temperature, humidity, wind speed and UV index from your selected location</p>
             <hr class="my-4">
@@ -33,32 +33,32 @@
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem;" >
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Temperature (F)</h5>
+                            <p class="card-text" id="temperature-card"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem;" >
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Humidity</h5>
+                            <p class="card-text" id="humidity-card"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem;" >
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">Wind Speed</h5>
+                            <p class="card-text" id="wind-card"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem;" >
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="card-title">UV Index</h5>
+                            <p class="card-text"> Currently N/A</p>
                         </div>
                     </div>
                 </div>
