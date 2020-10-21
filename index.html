@@ -12,7 +12,7 @@
         <!-- create searchbar -->
         <nav class="navbar navbar-custom bg-custom">
             <a class="navbar-brand" href="#">
-                <img src="weatherimage.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                <img src="weatherimage.jpg" width="30"height="30" class="d-inline-block align-top" alt="" loading="lazy">
                     Welcome to the World Weather on the Web
             </a>
             <form class="form-inline my-2 my-lg-0">
@@ -58,7 +58,7 @@
                     <div class="card" style="width: 16rem;" >
                         <div class="card-body">
                             <h5 class="card-title">UV Index</h5>
-                            <p class="card-text"> Currently N/A</p>
+                            <p class="card-text" id="uv-index"></p>
                         </div>
                     </div>
                 </div>
@@ -66,49 +66,40 @@
         </main>
         <!-- add footer -->
         <div class="jumbotron jumbo-bottom">
-            <!-- explain the box -->
+            <div id="forecast"></div>
+            <!-- explain the box
             <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
             <hr class="my-4">
             <!-- display data for following few days -->
             <div class="row">
                 <div class="col-sm-2">
                     <div class="card" style="width: 10rem;" >
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card-body" id="day0">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card" style="width: 10rem;" >
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card-body" id="day1">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card" style="width: 10rem;" >
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card-body" id="day2">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card" style="width: 10rem;" >
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card-body" id="day3">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
                     <div class="card" style="width: 10rem;" >
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card-body" id="day4">
                         </div>
                     </div>
                 </div>
