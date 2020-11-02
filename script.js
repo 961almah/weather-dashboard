@@ -42,7 +42,6 @@ $.ajax ({
     $("#temperature-card").text(((response.main.temp - 273.15) * 1.80 + 32).toFixed(2));
     $("#humidity-card").text(response.main.humidity);
     $("#wind-card").html(response.wind.speed);
-    $("#uvindex-card").text(response.main.humidity);
     
     // Convert the temp to fahrenheit
     var tempF = (response.main.temp - 273.15) * 1.80 + 32;
