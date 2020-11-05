@@ -119,6 +119,7 @@ $.ajax({
                 // Pull the date
                 var today = new Date();
                 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + (today.getDate() + i + 1);
+                console.log("date");
                 // put date in p tag
                 var dateFore = $("<p>").text("Date: " + date);
                 // add the date to the page
